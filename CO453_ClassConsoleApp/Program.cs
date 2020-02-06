@@ -13,13 +13,19 @@ namespace CO453_ClassConsoleApp
             Console.WriteLine("Eric's Distance Converter");
            
             DistanceConverter converter = new DistanceConverter();
+            miles = converter.GetDouble("Miles");
             feet = converter.ToFeet(miles);
 
-            Console.WriteLine("7 miles in feet = " + feet);
+            Console.WriteLine("The no. of miles = " + miles);
+            Console.WriteLine("The no. of feet = " + feet);
 
+            feet = converter.GetDouble("Feet");
             miles = converter.ToMiles(feet);
 
-            Console.WriteLine("Number of feet from miles " + miles);
+            Console.WriteLine("The no. of feet = " + feet);
+            Console.WriteLine("The no. of miles = " + miles);
+            
         }
+
     }
 }
